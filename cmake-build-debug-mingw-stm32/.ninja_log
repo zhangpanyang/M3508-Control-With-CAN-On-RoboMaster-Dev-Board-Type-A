@@ -24,8 +24,10 @@
 157	620	7504277127028571	CMakeFiles/STM32CANTest.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj	9fe6212548208fba
 197	646	7504277127431688	CMakeFiles/STM32CANTest.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj	17fd6874642367b2
 58	635	7504277126037648	CMakeFiles/STM32CANTest.elf.dir/Core/Src/syscalls.c.obj	6e16260943be2d18
-191	391	7504247735220232	STM32CANTest.elf	2b6c2a016f442138
-14	180	7504280742284306	CMakeFiles/STM32CANTest.elf.dir/Core/Src/startup.cpp.obj	fba82d4ef28aa62d
-8	191	7504247733403815	CMakeFiles/STM32CANTest.elf.dir/Core/Src/can_task.cpp.obj	73b099cfe08346ba
-3	172	7504286051240237	CMakeFiles/STM32CANTest.elf.dir/Core/Src/can_task.cpp.obj	73b099cfe08346ba
 173	360	7504286052941439	STM32CANTest.elf	2b6c2a016f442138
+14	180	7504280742284306	CMakeFiles/STM32CANTest.elf.dir/Core/Src/startup.cpp.obj	fba82d4ef28aa62d
+3	172	7504286051240237	CMakeFiles/STM32CANTest.elf.dir/Core/Src/can_task.cpp.obj	73b099cfe08346ba
+4	204	7504291497374412	CMakeFiles/STM32CANTest.elf.dir/Core/Src/M3508_Motor.cpp.obj	202626852feca148
+17	205	7504291497504514	CMakeFiles/STM32CANTest.elf.dir/Core/Src/can_task.cpp.obj	73b099cfe08346ba
+25	207	7504291497584586	CMakeFiles/STM32CANTest.elf.dir/Core/Src/startup.cpp.obj	fba82d4ef28aa62d
+207	402	7504291499407489	STM32CANTest.elf	918ab6f4788088dc
