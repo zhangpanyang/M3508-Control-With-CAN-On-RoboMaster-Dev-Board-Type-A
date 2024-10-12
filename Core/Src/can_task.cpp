@@ -50,7 +50,7 @@ uint8_t txData[8];
 
 void SetMotorCurrent(float current)
 {
-	int currentData = linearMapping(current, -20.0f, 20.0f, -16384, 16384);
+	int currentData = linearMappingFloat2Int(current, -20.0f, 20.0f, -16384, 16384);
 	for (int i = 0; i < 8; i++)
 	{
 		txData[i] = (i&1) ? (currentData>>8) : (currentData&0xff);
