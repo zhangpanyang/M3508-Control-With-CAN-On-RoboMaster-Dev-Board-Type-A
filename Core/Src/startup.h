@@ -5,6 +5,13 @@
 #ifndef STARTUP_H
 #define STARTUP_H
 
-void startup();
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+	void startup(void);
+#ifdef __cplusplus
+}
+#endif
 
 #endif //STARTUP_H

@@ -8,8 +8,4 @@
 void startup()
 {
 	canTaskInit();
-	while(1)
-	{
-
-	}
 }
