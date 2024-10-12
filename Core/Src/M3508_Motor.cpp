@@ -4,6 +4,9 @@
 
 #include "M3508_Motor.h"
 
+#include "can_task.h"
+#include "pid.h"
+
 M3508_Motor::M3508_Motor(){
 	ratio_ = 3591.0 / 187;
 	angle_ = 0;
@@ -12,8 +15,11 @@ M3508_Motor::M3508_Motor(){
 	last_ecd_angle_ = 0;
 	delta_ecd_angle_ = 0;
 	rotate_speed_ = 0;
+	output_speed_ = 0;
 	current_ = 0.87;
 	temprature_ = 0;
+
+	target_output_speed_ = 0;
 }
 
 float linearMappingInt2Float(int in,int in_min,int in_max,float out_min,float out_max) {
@@ -38,6 +44,7 @@ void M3508_Motor::canRxMsgCallback_v2(uint8_t rx_data[8]) {
 	// 转子转速
 	int rotate_speed = ((int)rx_data[2]<< 8) | rx_data[3];
 	rotate_speed_ = rotate_speed * 6;
+	output_speed_ = rotate_speed_ / ratio_;
 
 	// 实际转矩电流
 	int current = ((int)rx_data[4]<< 8) | rx_data[5]; // 合并
@@ -45,4 +52,17 @@ void M3508_Motor::canRxMsgCallback_v2(uint8_t rx_data[8]) {
 
 	// 电机温度
 	temprature_ = rx_data[6];
+
+	handle();
+}
+
+PIDController pidController = {
+	.Kp = 0.1,
+	.Ki = 0,
+	.Kd = 0,
+};
+void M3508_Motor::handle()
+{
+	float current = PID_Compute(&pidController, 0, rotate_speed_, 0.001);
+	SetMotorCurrent(current);
 }

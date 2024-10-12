@@ -23,26 +23,26 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08b7ba20-d45a-45a4-911c-53180874ea0a" name="更改" comment="尝试转起来">
+    <list default="true" id="08b7ba20-d45a-45a4-911c-53180874ea0a" name="更改" comment="修正线性映射函数名称">
+      <change afterPath="$PROJECT_DIR$/Core/Src/pid.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Src/pid.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/M3508_Motor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/M3508_Motor.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/M3508_Motor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/M3508_Motor.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/can_task.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/can_task.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest.uvguix.Sunny" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest.uvguix.Sunny" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest.uvoptx" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest.uvoptx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.axf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/startup.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/startup.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.build_log.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.build_log.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.hex" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.hex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.map" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest_STM32CANTest.dep" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest_STM32CANTest.dep" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/can_task.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/can_task.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/m3508_motor.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/startup.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/startup.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.cmake/api/v1/reply/codemodel-v2-cefffb008b0cdc45d4dc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.cmake/api/v1/reply/index-2024-10-12T09-36-54-0977.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.cmake/api/v1/reply/target-STM32CANTest.elf-Debug-8b1e6987e338b9f2b853.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/STM32CANTest.elf.dir/Core/Src/M3508_Motor.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/STM32CANTest.elf.dir/Core/Src/M3508_Motor.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/STM32CANTest.elf.dir/Core/Src/can_task.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/STM32CANTest.elf.dir/Core/Src/can_task.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/STM32CANTest.elf.dir/Core/Src/startup.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/STM32CANTest.elf.dir/Core/Src/startup.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/STM32CANTest.elf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/STM32CANTest.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/STM32CANTest.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/build.ninja" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +127,7 @@
       <workItem from="1728724221950" duration="1231000" />
       <workItem from="1728725479742" duration="122000" />
       <workItem from="1728725668586" duration="53000" />
-      <workItem from="1728725725910" duration="2903000" />
+      <workItem from="1728725725910" duration="4352000" />
     </task>
     <task id="LOCAL-00001" summary="Premiere">
       <option name="closed" value="true" />
@@ -201,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728728519142</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="修正线性映射函数名称">
+      <option name="closed" value="true" />
+      <created>1728728675178</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1728728675178</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,7 +241,8 @@
     <MESSAGE value="重构" />
     <MESSAGE value="能够读取所有的反馈量" />
     <MESSAGE value="尝试转起来" />
-    <option name="LAST_COMMIT_MESSAGE" value="尝试转起来" />
+    <MESSAGE value="修正线性映射函数名称" />
+    <option name="LAST_COMMIT_MESSAGE" value="修正线性映射函数名称" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

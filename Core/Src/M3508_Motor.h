@@ -22,11 +22,15 @@ public:
 	float last_ecd_angle_; // deg 上次电机编码器角度
 	float delta_ecd_angle_; // deg 编码器端新转动的角度
 	float rotate_speed_; // dps 反馈转子转速
+	float output_speed_;
 	float current_;
 	float temprature_;
 
+	float target_output_speed_;
+
 	M3508_Motor();
 	void canRxMsgCallback_v2(uint8_t rx_data[8]);
+	void handle();
 };
 
 #endif //M3508_MOTOR_H

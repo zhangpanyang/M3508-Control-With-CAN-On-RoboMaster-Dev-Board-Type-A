@@ -11,9 +11,9 @@ void startup()
 
 	while(1)
 	{
-		SetMotorCurrent(1);
+		// SetMotorCurrent(1);
 		HAL_Delay(1000);
-		SetMotorCurrent(0);
-		HAL_Delay(1000);
+		// SetMotorCurrent(0);
+		// HAL_Delay(1000);
 	}
 }
