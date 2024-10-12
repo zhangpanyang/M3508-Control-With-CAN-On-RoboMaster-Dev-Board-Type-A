@@ -23,7 +23,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "startup.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -88,6 +88,8 @@ int main(void)
   MX_GPIO_Init();
   MX_CAN1_Init();
   /* USER CODE BEGIN 2 */
+
+  startup();
 
   /* USER CODE END 2 */
 
