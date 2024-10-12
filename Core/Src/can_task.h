@@ -9,5 +9,6 @@
 #include "can.h"
 
 void canTaskInit();
+void SetMotorCurrent(float current);
 
 #endif //CAN_TASK_H

@@ -7,6 +7,9 @@
 
 #include "main.h"
 
+float linearMapping(int in,int in_min,int in_max,float out_min,float out_max);
+int linearMapping(float in,float in_min,float in_max,int out_min,int out_max);
+
 class M3508_Motor
 {
 private:

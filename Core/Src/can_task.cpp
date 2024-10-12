@@ -36,3 +36,24 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef* hcan)
 		motor.canRxMsgCallback_v2(rxData);
 	}
 }
+
+CAN_TxHeaderTypeDef txHeader={
+.StdId = 0x200,
+.ExtId = 0x200,
+.IDE = CAN_ID_STD,
+.RTR = CAN_RTR_DATA,
+.DLC = 8,
+.TransmitGlobalTime = DISABLE
+};
+uint32_t txMailbox;
+uint8_t txData[8];
+
+void SetMotorCurrent(float current)
+{
+	int currentData = linearMapping(current, -20.0f, 20.0f, -16384, 16384);
+	for (int i = 0; i < 8; i++)
+	{
+		txData[i] = (i&1) ? (currentData>>8) : (currentData&0xff);
+	}
+	HAL_CAN_AddTxMessage(&hcan1, &txHeader, txData, &txMailbox);
+}
