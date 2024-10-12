@@ -34,13 +34,11 @@ void M3508_Motor::canRxMsgCallback_v2(uint8_t rx_data[8]) {
 
 	// 转子转速
 	int rotate_speed = ((int)rx_data[2]<< 8) | rx_data[3];
-	rotate_speed_ = temporar_speed;
+	rotate_speed_ = rotate_speed * 6;
 
 	// 实际转矩电流
-	uint16_t current_gao= rx_data[4];
-	uint16_t current_di= rx_data[5];
-	uint16_t temporar_current = (current_gao<< 8) | current_di; // 合并
-	current_ = linearMapping(temporar_current, -16384, 16384, -20, 20); // 映射
+	int current = ((int)rx_data[4]<< 8) | rx_data[5]; // 合并
+	current_ = linearMapping(current, -16384, 16384, -20, 20); // 映射
 
 	// 电机温度
 	temprature_ = rx_data[6];
