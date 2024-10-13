@@ -61,6 +61,9 @@ PIDController pidController = {
 	.Kp = 0.0005,
 	.Ki = 0,
 	.Kd = 0,
+	.outputMax = 0.05,
+	.pMax = 0.05,
+	.iMax = 0
 };
 void M3508_Motor::handle()
 {

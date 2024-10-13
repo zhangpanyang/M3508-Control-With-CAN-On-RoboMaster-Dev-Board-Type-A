@@ -4,15 +4,6 @@
 
 #include "pid.h"
 
-// 初始化 PID 控制器
-void PID_Init(PIDController *pid, float Kp, float Ki, float Kd) {
-	pid->Kp = Kp;
-	pid->Ki = Ki;
-	pid->Kd = Kd;
-	pid->prevError = 0;
-	pid->integral = 0;
-}
-
 // 计算 PID 输出
 float PID_Compute(PIDController *pid, float setpoint, float actualValue, float deltaTime) {
 	// 计算误差
@@ -20,10 +11,12 @@ float PID_Compute(PIDController *pid, float setpoint, float actualValue, float d
 
 	// 计算比例项
 	float Pout = pid->Kp * error;
+	INRANGE(Pout, -pid->pMax, pid->pMax);
 
 	// 计算积分项
 	pid->integral += error * deltaTime;
 	float Iout = pid->Ki * pid->integral;
+	INRANGE(Iout, -pid->iMax, pid->iMax);
 
 	// 计算微分项
 	float derivative = (error - pid->prevError) / deltaTime;
@@ -34,5 +27,6 @@ float PID_Compute(PIDController *pid, float setpoint, float actualValue, float d
 
 	// 计算最终输出
 	float output = Pout + Iout + Dout;
+	INRANGE(output, -pid->outputMax, pid->outputMax);
 	return output;
 }
