@@ -27,6 +27,7 @@ public:
 	float temprature_;
 
 	float target_output_speed_;
+	float control_current_;
 
 	M3508_Motor();
 	void canRxMsgCallback_v2(uint8_t rx_data[8]);

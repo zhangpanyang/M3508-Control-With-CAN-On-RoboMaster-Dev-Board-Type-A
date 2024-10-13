@@ -1388,26 +1388,25 @@ LOAD C:/MyProgramFiles/Engineering/Embedded/STM32CubeCLT-1.16.0/STM32CubeCLT_1.1
                 0x08001edc                linearMappingFloat2Int(float, float, float, int, int)
  *fill*         0x08001f26        0x2 
  .text._ZN11M3508_Motor6handleEv
-                0x08001f28       0x1c CMakeFiles/STM32CANTest.elf.dir/Core/Src/M3508_Motor.cpp.obj
+                0x08001f28       0x20 CMakeFiles/STM32CANTest.elf.dir/Core/Src/M3508_Motor.cpp.obj
                 0x08001f28                M3508_Motor::handle()
  .text._ZN11M3508_Motor19canRxMsgCallback_v2EPh
-                0x08001f44       0xb8 CMakeFiles/STM32CANTest.elf.dir/Core/Src/M3508_Motor.cpp.obj
-                0x08001f44                M3508_Motor::canRxMsgCallback_v2(unsigned char*)
+                0x08001f48       0xb8 CMakeFiles/STM32CANTest.elf.dir/Core/Src/M3508_Motor.cpp.obj
+                0x08001f48                M3508_Motor::canRxMsgCallback_v2(unsigned char*)
  .text.MX_CAN1_Init
-                0x08001ffc       0x44 CMakeFiles/STM32CANTest.elf.dir/Core/Src/can.c.obj
-                0x08001ffc                MX_CAN1_Init
+                0x08002000       0x44 CMakeFiles/STM32CANTest.elf.dir/Core/Src/can.c.obj
+                0x08002000                MX_CAN1_Init
  .text.HAL_CAN_MspInit
-                0x08002040       0xac CMakeFiles/STM32CANTest.elf.dir/Core/Src/can.c.obj
-                0x08002040                HAL_CAN_MspInit
+                0x08002044       0xac CMakeFiles/STM32CANTest.elf.dir/Core/Src/can.c.obj
+                0x08002044                HAL_CAN_MspInit
  .text._Z41__static_initialization_and_destruction_0ii
-                0x080020ec       0x20 CMakeFiles/STM32CANTest.elf.dir/Core/Src/can_task.cpp.obj
+                0x080020f0       0x20 CMakeFiles/STM32CANTest.elf.dir/Core/Src/can_task.cpp.obj
  .text._Z11canTaskInitv
-                0x0800210c       0x34 CMakeFiles/STM32CANTest.elf.dir/Core/Src/can_task.cpp.obj
-                0x0800210c                canTaskInit()
+                0x08002110       0x34 CMakeFiles/STM32CANTest.elf.dir/Core/Src/can_task.cpp.obj
+                0x08002110                canTaskInit()
  .text.HAL_CAN_RxFifo0MsgPendingCallback
-                0x08002140       0x34 CMakeFiles/STM32CANTest.elf.dir/Core/Src/can_task.cpp.obj
-                0x08002140                HAL_CAN_RxFifo0MsgPendingCallback
- *fill*         0x08002174        0x4 
+                0x08002144       0x34 CMakeFiles/STM32CANTest.elf.dir/Core/Src/can_task.cpp.obj
+                0x08002144                HAL_CAN_RxFifo0MsgPendingCallback
  .text._Z15SetMotorCurrentf
                 0x08002178       0x98 CMakeFiles/STM32CANTest.elf.dir/Core/Src/can_task.cpp.obj
                 0x08002178                SetMotorCurrent(float)

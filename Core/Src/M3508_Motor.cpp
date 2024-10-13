@@ -20,6 +20,7 @@ M3508_Motor::M3508_Motor(){
 	temprature_ = 0;
 
 	target_output_speed_ = 0;
+	control_current_ = 0;
 }
 
 float linearMappingInt2Float(int in,int in_min,int in_max,float out_min,float out_max) {
@@ -42,12 +43,12 @@ void M3508_Motor::canRxMsgCallback_v2(uint8_t rx_data[8]) {
 	last_ecd_angle_ = ecd_angle_;	//更新
 
 	// 转子转速
-	int rotate_speed = ((int)rx_data[2]<< 8) | rx_data[3];
+	int rotate_speed = (int16_t)((uint16_t)rx_data[2]<< 8) | rx_data[3];
 	rotate_speed_ = rotate_speed * 6;
 	output_speed_ = rotate_speed_ / ratio_;
 
 	// 实际转矩电流
-	int current = ((int)rx_data[4]<< 8) | rx_data[5]; // 合并
+	int current = (int16_t)((uint16_t)rx_data[4]<< 8) | rx_data[5]; // 合并
 	current_ = linearMappingInt2Float(current, -16384, 16384, -20, 20); // 映射
 
 	// 电机温度
@@ -57,12 +58,12 @@ void M3508_Motor::canRxMsgCallback_v2(uint8_t rx_data[8]) {
 }
 
 PIDController pidController = {
-	.Kp = 0.1,
+	.Kp = 0.0005,
 	.Ki = 0,
 	.Kd = 0,
 };
 void M3508_Motor::handle()
 {
-	float current = PID_Compute(&pidController, 0, rotate_speed_, 0.001);
-	SetMotorCurrent(current);
+	control_current_ = PID_Compute(&pidController, 30, output_speed_, 0.001);
+	// SetMotorCurrent(control_current_);
 }
