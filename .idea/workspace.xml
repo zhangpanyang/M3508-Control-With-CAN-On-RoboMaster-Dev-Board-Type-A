@@ -23,9 +23,26 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08b7ba20-d45a-45a4-911c-53180874ea0a" name="更改" comment="修正PID">
+    <list default="true" id="08b7ba20-d45a-45a4-911c-53180874ea0a" name="更改" comment="用cubeMonitor监控">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/M3508_Motor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/M3508_Motor.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest.uvguix.Sunny" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest.uvguix.Sunny" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest.uvoptx" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest.uvoptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.axf" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.axf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.build_log.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.build_log.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.hex" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.hex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.map" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest_STM32CANTest.dep" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest_STM32CANTest.dep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/m3508_motor.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/m3508_motor.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/STM32CANTest.elf.dir/Core/Src/M3508_Motor.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/STM32CANTest.elf.dir/Core/Src/M3508_Motor.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/STM32CANTest.elf.dir/Core/Src/can_task.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/STM32CANTest.elf.dir/Core/Src/can_task.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/STM32CANTest.elf.dir/Core/Src/pid.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/STM32CANTest.elf.dir/Core/Src/pid.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/STM32CANTest.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/STM32CANTest.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/STM32CANTest.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/STM32CANTest.elf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/STM32CANTest.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/STM32CANTest.hex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/STM32CANTest.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/STM32CANTest.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +235,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728790887228</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="用cubeMonitor监控">
+      <option name="closed" value="true" />
+      <created>1728911452740</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1728911452740</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,7 +278,8 @@
     <MESSAGE value="修正线性映射函数名称" />
     <MESSAGE value="增加PID" />
     <MESSAGE value="修正PID" />
-    <option name="LAST_COMMIT_MESSAGE" value="修正PID" />
+    <MESSAGE value="用cubeMonitor监控" />
+    <option name="LAST_COMMIT_MESSAGE" value="用cubeMonitor监控" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

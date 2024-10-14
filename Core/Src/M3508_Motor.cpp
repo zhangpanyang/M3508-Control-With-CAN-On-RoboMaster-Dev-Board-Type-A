@@ -67,6 +67,6 @@ PIDController pidController = {
 };
 void M3508_Motor::handle()
 {
-	control_current_ = PID_Compute(&pidController, 30, output_speed_, 0.001);
-	// SetMotorCurrent(control_current_);
+	control_current_ = PID_Compute(&pidController, 60, output_speed_, 0.001);
+	SetMotorCurrent(control_current_);
 }
