@@ -26,23 +26,6 @@
     <list default="true" id="08b7ba20-d45a-45a4-911c-53180874ea0a" name="更改" comment="用cubeMonitor监控">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/M3508_Motor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/M3508_Motor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest.uvguix.Sunny" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest.uvguix.Sunny" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.axf" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.axf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.build_log.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.build_log.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.hex" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.hex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.map" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest_STM32CANTest.dep" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest_STM32CANTest.dep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/m3508_motor.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/m3508_motor.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/STM32CANTest.elf.dir/Core/Src/M3508_Motor.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/STM32CANTest.elf.dir/Core/Src/M3508_Motor.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/STM32CANTest.elf.dir/Core/Src/can_task.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/STM32CANTest.elf.dir/Core/Src/can_task.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/STM32CANTest.elf.dir/Core/Src/pid.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/STM32CANTest.elf.dir/Core/Src/pid.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/STM32CANTest.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/STM32CANTest.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/STM32CANTest.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/STM32CANTest.elf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/STM32CANTest.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/STM32CANTest.hex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/STM32CANTest.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/STM32CANTest.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,21 +37,26 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug-MinGW-STM32" />
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Control-Brush-Drum" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "zhangpanyang"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;zhangpanyang&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/zhangpanyang/M3508-Control-With-CAN-On-RoboMaster-Dev-Board-Type-A",
-    "accountId": "1572fbfb-54c2-4fc0-b315-5a7d89b3fb89"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/zhangpanyang/M3508-Control-With-CAN-On-RoboMaster-Dev-Board-Type-A&quot;,
+    &quot;accountId&quot;: &quot;1572fbfb-54c2-4fc0-b315-5a7d89b3fb89&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
     <option name="majorVersion" value="2024" />
@@ -111,7 +99,7 @@
       </method>
     </configuration>
     <configuration name="STM32CANTest.elf" type="com.jetbrains.cidr.embedded.openocd.conf.type" factoryName="com.jetbrains.cidr.embedded.openocd.conf.factory" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="STM32CANTest" TARGET_NAME="STM32CANTest.elf" CONFIG_NAME="Debug-MinGW-STM32" version="1" RUN_TARGET_PROJECT_NAME="STM32CANTest" RUN_TARGET_NAME="STM32CANTest.elf">
-      <openocd version="1" gdb-port="3333" telnet-port="4444" reset-type="INIT" download-type="UPDATED_ONLY">
+      <openocd version="1" gdb-port="3333" telnet-port="4444" board-config="C:\Users\Sunny\Downloads\openocd_dap.cfg" reset-type="INIT" download-type="UPDATED_ONLY">
         <debugger kind="GDB" isBundled="true" />
       </openocd>
       <method v="2">
@@ -259,7 +247,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Control-Brush-Drum" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
