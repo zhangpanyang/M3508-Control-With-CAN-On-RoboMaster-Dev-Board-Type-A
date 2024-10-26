@@ -23,7 +23,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08b7ba20-d45a-45a4-911c-53180874ea0a" name="更改" comment="Fix bug of delta_angle">
+    <list default="true" id="08b7ba20-d45a-45a4-911c-53180874ea0a" name="更改" comment="完成双环控制（角度）">
       <change beforePath="$PROJECT_DIR$/Core/Src/M3508_Motor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/M3508_Motor.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +139,7 @@
       <workItem from="1729429293811" duration="2632000" />
       <workItem from="1729439059111" duration="9000" />
       <workItem from="1729922080167" duration="9061000" />
-      <workItem from="1729933413316" duration="1326000" />
+      <workItem from="1729933413316" duration="1805000" />
     </task>
     <task id="LOCAL-00001" summary="Premiere">
       <option name="closed" value="true" />
@@ -309,7 +309,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729934292202</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="完成双环控制（角度）">
+      <option name="closed" value="true" />
+      <created>1729934909778</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1729934909778</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,7 +361,8 @@
     <MESSAGE value="建立filter" />
     <MESSAGE value="设置双环" />
     <MESSAGE value="Fix bug of delta_angle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix bug of delta_angle" />
+    <MESSAGE value="完成双环控制（角度）" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成双环控制（角度）" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
