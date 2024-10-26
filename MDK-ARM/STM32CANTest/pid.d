@@ -1,1 +1,1 @@
-stm32cantest/pid.o: ..\Core\Src\pid.cpp ..\Core\Src\pid.h
+stm32cantest/pid.o: ..\Core\Src\pid.cpp ..\Core\Inc\pid.h

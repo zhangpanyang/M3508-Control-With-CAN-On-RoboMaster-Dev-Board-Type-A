@@ -43,7 +43,7 @@ void M3508_Motor::canRxMsgCallback_v2(uint8_t rx_data[8]) {
 
 	last_ecd_angle_ = ecd_angle_;	//更新
 
-	delta_angle_ = delta_angle_ / ratio_;
+	delta_angle_ = delta_ecd_angle_ / ratio_;
 	angle_ += delta_angle_;
 
 	// 转子转速

@@ -1,5 +1,5 @@
 stm32cantest/m3508_motor.o: ..\Core\Src\M3508_Motor.cpp \
-  ..\Core\Src\M3508_Motor.h ..\Core\Inc\main.h \
+  ..\Core\Inc\M3508_Motor.h ..\Core\Inc\main.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h \
   ..\Core\Inc\stm32f4xx_hal_conf.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h \
@@ -33,4 +33,4 @@ stm32cantest/m3508_motor.o: ..\Core\Src\M3508_Motor.cpp \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h \
-  ..\Core\Src\can_task.h ..\Core\Inc\can.h ..\Core\Src\pid.h
+  ..\Core\Inc\can_task.h ..\Core\Inc\can.h ..\Core\Inc\pid.h

@@ -3,7 +3,7 @@
 <title>Static Call Graph - [STM32CANTest\STM32CANTest.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image STM32CANTest\STM32CANTest.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6190004: Last Updated: Sat Oct 26 16:35:15 2024
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6190004: Last Updated: Sat Oct 26 17:17:32 2024
 <BR><P>
 <H3>Maximum Stack Usage =        160 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -620,28 +620,28 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f427xx.o(RESET)
 </UL>
 <P><STRONG><a name="[1e]"></a>CAN1_RX0_IRQHandler</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32f4xx_it.o(.text.CAN1_RX0_IRQHandler))
-<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = CAN1_RX0_IRQHandler &rArr; HAL_CAN_IRQHandler &rArr; HAL_CAN_RxFifo0MsgPendingCallback &rArr; M3508_Motor::canRxMsgCallback_v2(unsigned char*) &rArr; SetMotorCurrent(float) &rArr; __aeabi_f2d
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = CAN1_RX0_IRQHandler &rArr; HAL_CAN_IRQHandler &rArr; HAL_CAN_RxFifo0MsgPendingCallback &rArr; M3508_Motor::canRxMsgCallback_v2(unsigned char*) &rArr; SetMotorCurrent(float) &rArr; __aeabi_f2d
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_CAN_IRQHandler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f427xx.o(RESET)
 </UL>
 <P><STRONG><a name="[1f]"></a>CAN1_RX1_IRQHandler</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32f4xx_it.o(.text.CAN1_RX1_IRQHandler))
-<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = CAN1_RX1_IRQHandler &rArr; HAL_CAN_IRQHandler &rArr; HAL_CAN_RxFifo0MsgPendingCallback &rArr; M3508_Motor::canRxMsgCallback_v2(unsigned char*) &rArr; SetMotorCurrent(float) &rArr; __aeabi_f2d
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = CAN1_RX1_IRQHandler &rArr; HAL_CAN_IRQHandler &rArr; HAL_CAN_RxFifo0MsgPendingCallback &rArr; M3508_Motor::canRxMsgCallback_v2(unsigned char*) &rArr; SetMotorCurrent(float) &rArr; __aeabi_f2d
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_CAN_IRQHandler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f427xx.o(RESET)
 </UL>
 <P><STRONG><a name="[20]"></a>CAN1_SCE_IRQHandler</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32f4xx_it.o(.text.CAN1_SCE_IRQHandler))
-<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = CAN1_SCE_IRQHandler &rArr; HAL_CAN_IRQHandler &rArr; HAL_CAN_RxFifo0MsgPendingCallback &rArr; M3508_Motor::canRxMsgCallback_v2(unsigned char*) &rArr; SetMotorCurrent(float) &rArr; __aeabi_f2d
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = CAN1_SCE_IRQHandler &rArr; HAL_CAN_IRQHandler &rArr; HAL_CAN_RxFifo0MsgPendingCallback &rArr; M3508_Motor::canRxMsgCallback_v2(unsigned char*) &rArr; SetMotorCurrent(float) &rArr; __aeabi_f2d
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_CAN_IRQHandler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f427xx.o(RESET)
 </UL>
 <P><STRONG><a name="[1d]"></a>CAN1_TX_IRQHandler</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32f4xx_it.o(.text.CAN1_TX_IRQHandler))
-<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = CAN1_TX_IRQHandler &rArr; HAL_CAN_IRQHandler &rArr; HAL_CAN_RxFifo0MsgPendingCallback &rArr; M3508_Motor::canRxMsgCallback_v2(unsigned char*) &rArr; SetMotorCurrent(float) &rArr; __aeabi_f2d
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = CAN1_TX_IRQHandler &rArr; HAL_CAN_IRQHandler &rArr; HAL_CAN_RxFifo0MsgPendingCallback &rArr; M3508_Motor::canRxMsgCallback_v2(unsigned char*) &rArr; SetMotorCurrent(float) &rArr; __aeabi_f2d
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_CAN_IRQHandler
 </UL>
@@ -681,7 +681,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[7c]"></a>HAL_CAN_IRQHandler</STRONG> (Thumb, 606 bytes, Stack size 40 bytes, stm32f4xx_hal_can.o(.text.HAL_CAN_IRQHandler))
-<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = HAL_CAN_IRQHandler &rArr; HAL_CAN_RxFifo0MsgPendingCallback &rArr; M3508_Motor::canRxMsgCallback_v2(unsigned char*) &rArr; SetMotorCurrent(float) &rArr; __aeabi_f2d
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = HAL_CAN_IRQHandler &rArr; HAL_CAN_RxFifo0MsgPendingCallback &rArr; M3508_Motor::canRxMsgCallback_v2(unsigned char*) &rArr; SetMotorCurrent(float) &rArr; __aeabi_f2d
 </UL>
 <BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_CAN_ErrorCallback
 <LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_CAN_TxMailbox2CompleteCallback
@@ -727,7 +727,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[80]"></a>HAL_CAN_RxFifo0MsgPendingCallback</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, can_task.o(.text.HAL_CAN_RxFifo0MsgPendingCallback))
-<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = HAL_CAN_RxFifo0MsgPendingCallback &rArr; M3508_Motor::canRxMsgCallback_v2(unsigned char*) &rArr; SetMotorCurrent(float) &rArr; __aeabi_f2d
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = HAL_CAN_RxFifo0MsgPendingCallback &rArr; M3508_Motor::canRxMsgCallback_v2(unsigned char*) &rArr; SetMotorCurrent(float) &rArr; __aeabi_f2d
 </UL>
 <BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M3508_Motor::canRxMsgCallback_v2(unsigned char*)
 <LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_CAN_GetRxMessage
@@ -984,8 +984,8 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetMotorCurrent(float)
 </UL>
 
-<P><STRONG><a name="[91]"></a>M3508_Motor::canRxMsgCallback_v2(unsigned char*)</STRONG> (Thumb, 268 bytes, Stack size 8 bytes, m3508_motor.o(.text._ZN11M3508_Motor19canRxMsgCallback_v2EPh))
-<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = M3508_Motor::canRxMsgCallback_v2(unsigned char*) &rArr; SetMotorCurrent(float) &rArr; __aeabi_f2d
+<P><STRONG><a name="[91]"></a>M3508_Motor::canRxMsgCallback_v2(unsigned char*)</STRONG> (Thumb, 324 bytes, Stack size 24 bytes, m3508_motor.o(.text._ZN11M3508_Motor19canRxMsgCallback_v2EPh))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = M3508_Motor::canRxMsgCallback_v2(unsigned char*) &rArr; SetMotorCurrent(float) &rArr; __aeabi_f2d
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID::compute(float, float, float)
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetMotorCurrent(float)
@@ -1161,8 +1161,10 @@ Local Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> can_task.o(.init_array)
 </UL>
-<P><STRONG><a name="[65]"></a>_GLOBAL__sub_I_M3508_Motor.cpp</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, m3508_motor.o(.text._GLOBAL__sub_I_M3508_Motor.cpp))
-<BR><BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID::PID(PIDInitializer*)
+<P><STRONG><a name="[65]"></a>_GLOBAL__sub_I_M3508_Motor.cpp</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, m3508_motor.o(.text._GLOBAL__sub_I_M3508_Motor.cpp))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = _GLOBAL__sub_I_M3508_Motor.cpp
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID::PID(PIDInitializer*)
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> m3508_motor.o(.init_array)
 </UL><P>
