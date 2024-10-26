@@ -23,13 +23,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08b7ba20-d45a-45a4-911c-53180874ea0a" name="更改" comment="把头文件放在inc下">
-      <change afterPath="$PROJECT_DIR$/Core/Inc/filter.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Src/filter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/STM32CANTest.elf.dir/Core/Src/M3508_Motor.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/STM32CANTest.elf.dir/Core/Src/M3508_Motor.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/STM32CANTest.elf.dir/Core/Src/can_task.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/STM32CANTest.elf.dir/Core/Src/can_task.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/STM32CANTest.elf.dir/Core/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/STM32CANTest.elf.dir/Core/Src/main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/STM32CANTest.elf.dir/Core/Src/startup.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/STM32CANTest.elf.dir/Core/Src/startup.cpp.obj" afterDir="false" />
+    <list default="true" id="08b7ba20-d45a-45a4-911c-53180874ea0a" name="更改" comment="建立filter">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/M3508_Motor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/M3508_Motor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/M3508_Motor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/M3508_Motor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.cmake/api/v1/reply/codemodel-v2-02abffa4905804dced60.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.cmake/api/v1/reply/index-2024-10-12T10-33-09-0370.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.cmake/api/v1/reply/target-STM32CANTest.elf-Debug-2331e267cf7c2ccdcc49.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +102,11 @@
     </key>
   </component>
   <component name="RunManager" selected="OpenOCD 下载并运行.STM32CANTest.elf">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="STM32CANTest.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="STM32CANTest" TARGET_NAME="STM32CANTest.elf" CONFIG_NAME="Debug-MinGW-STM32" RUN_TARGET_PROJECT_NAME="STM32CANTest" RUN_TARGET_NAME="STM32CANTest.elf">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -139,7 +144,7 @@
       <workItem from="1729429293811" duration="2632000" />
       <workItem from="1729439059111" duration="9000" />
       <workItem from="1729922080167" duration="9061000" />
-      <workItem from="1729933413316" duration="273000" />
+      <workItem from="1729933413316" duration="718000" />
     </task>
     <task id="LOCAL-00001" summary="Premiere">
       <option name="closed" value="true" />
@@ -285,7 +290,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729933456475</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="建立filter">
+      <option name="closed" value="true" />
+      <created>1729933697222</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1729933697222</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,7 +339,8 @@
     <MESSAGE value="修正integralMax设定，修正INRANGE" />
     <MESSAGE value="调了p，能稳定转" />
     <MESSAGE value="把头文件放在inc下" />
-    <option name="LAST_COMMIT_MESSAGE" value="把头文件放在inc下" />
+    <MESSAGE value="建立filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="建立filter" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

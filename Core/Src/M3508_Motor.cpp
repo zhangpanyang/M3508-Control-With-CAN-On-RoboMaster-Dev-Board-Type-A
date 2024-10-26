@@ -19,6 +19,7 @@ M3508_Motor::M3508_Motor(){
 	current_ = 0;
 	temprature_ = 0;
 
+	target_output_angle_ = 0;
 	target_output_speed_ = 0;
 	control_current_ = 0;
 }
@@ -42,6 +43,9 @@ void M3508_Motor::canRxMsgCallback_v2(uint8_t rx_data[8]) {
 
 	last_ecd_angle_ = ecd_angle_;	//更新
 
+	delta_angle_ = delta_angle_ / ratio_;
+	angle_ += delta_angle_;
+
 	// 转子转速
 	int rotate_speed = (int16_t)((uint16_t)rx_data[2]<< 8) | rx_data[3];
 	rotate_speed_ = rotate_speed * 6;
@@ -57,7 +61,7 @@ void M3508_Motor::canRxMsgCallback_v2(uint8_t rx_data[8]) {
 	handle();
 }
 
-PIDInitializer pidInitMotor{
+PIDInitializer pidInitSpeed{
 	.Kp = 0.0003,
 	.Ki = 0,
 	.Kd = 0,
@@ -65,10 +69,21 @@ PIDInitializer pidInitMotor{
 	.pMax = 0.1,
 	.integralMax = 1000
 };
-PID pidMotor(&pidInitMotor);
+PID pidSpeed(&pidInitSpeed);
+
+PIDInitializer pidInitAngle{
+	.Kp = 0,
+	.Ki = 0,
+	.Kd = 0,
+	.outputMax = 500,
+	.pMax = 500,
+	.integralMax = 1000
+};
+PID pidAngle(&pidInitAngle);
 
 void M3508_Motor::handle()
 {
-	control_current_ = pidMotor.compute(target_output_speed_, output_speed_, 0.001);
+	target_output_speed_ = pidAngle.compute(target_output_angle_, angle_, 0.001);
+	control_current_ = pidSpeed.compute(target_output_speed_, output_speed_, 0.001);
 	SetMotorCurrent(control_current_);
 }

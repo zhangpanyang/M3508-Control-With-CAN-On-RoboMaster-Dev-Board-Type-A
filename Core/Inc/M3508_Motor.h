@@ -26,6 +26,7 @@ public:
 	float current_;
 	float temprature_;
 
+	float target_output_angle_;
 	float target_output_speed_;
 	float control_current_;
 
