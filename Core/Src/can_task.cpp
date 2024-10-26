@@ -50,7 +50,7 @@ uint8_t txData[8];
 
 void SetMotorCurrent(float current)
 {
-	if(current > 0.05 || current < -0.05)
+	if(current > 0.2 || current < -0.2)
 	{
 		return;
 	}

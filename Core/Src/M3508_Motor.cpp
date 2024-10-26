@@ -8,7 +8,7 @@
 #include "pid.h"
 
 M3508_Motor::M3508_Motor(){
-	ratio_ = 3591.0 / 187;
+	ratio_ = 36;
 	angle_ = 0;
 	delta_angle_ = 0;
 	ecd_angle_ = 0;
@@ -16,7 +16,7 @@ M3508_Motor::M3508_Motor(){
 	delta_ecd_angle_ = 0;
 	rotate_speed_ = 0;
 	output_speed_ = 0;
-	current_ = 0.87;
+	current_ = 0;
 	temprature_ = 0;
 
 	target_output_speed_ = 0;
@@ -58,12 +58,12 @@ void M3508_Motor::canRxMsgCallback_v2(uint8_t rx_data[8]) {
 }
 
 PIDInitializer pidInitMotor{
-	.Kp = 0.0025,
+	.Kp = 0.0003,
 	.Ki = 0,
 	.Kd = 0,
-	.pMax = 0.05,
-	.integralMax = 1000,
-	.outputMax = 0.05
+	.outputMax = 0.1,
+	.pMax = 0.1,
+	.integralMax = 1000
 };
 PID pidMotor(&pidInitMotor);
 
