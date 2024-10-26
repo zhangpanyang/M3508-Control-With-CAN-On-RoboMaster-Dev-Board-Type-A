@@ -23,24 +23,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08b7ba20-d45a-45a4-911c-53180874ea0a" name="更改" comment="设置双环">
+    <list default="true" id="08b7ba20-d45a-45a4-911c-53180874ea0a" name="更改" comment="Fix bug of delta_angle">
       <change beforePath="$PROJECT_DIR$/Core/Src/M3508_Motor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/M3508_Motor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest.uvguix.Sunny" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest.uvguix.Sunny" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest.uvoptx" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest.uvoptx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.axf" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.axf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.build_log.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.build_log.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.hex" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.hex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.map" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest_STM32CANTest.dep" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest_STM32CANTest.dep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/can_task.d" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/can_task.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/can_task.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/can_task.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/m3508_motor.d" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/m3508_motor.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/m3508_motor.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/m3508_motor.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/main.d" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/main.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/pid.d" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/pid.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/pid.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/pid.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/startup.d" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/startup.d" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +139,7 @@
       <workItem from="1729429293811" duration="2632000" />
       <workItem from="1729439059111" duration="9000" />
       <workItem from="1729922080167" duration="9061000" />
-      <workItem from="1729933413316" duration="823000" />
+      <workItem from="1729933413316" duration="1326000" />
     </task>
     <task id="LOCAL-00001" summary="Premiere">
       <option name="closed" value="true" />
@@ -317,7 +301,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729934154572</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Fix bug of delta_angle">
+      <option name="closed" value="true" />
+      <created>1729934292202</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1729934292202</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,7 +352,8 @@
     <MESSAGE value="把头文件放在inc下" />
     <MESSAGE value="建立filter" />
     <MESSAGE value="设置双环" />
-    <option name="LAST_COMMIT_MESSAGE" value="设置双环" />
+    <MESSAGE value="Fix bug of delta_angle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix bug of delta_angle" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -72,12 +72,12 @@ PIDInitializer pidInitSpeed{
 PID pidSpeed(&pidInitSpeed);
 
 PIDInitializer pidInitAngle{
-	.Kp = 0,
-	.Ki = 0,
+	.Kp = 50,
+	.Ki = 0.01,
 	.Kd = 0,
 	.outputMax = 500,
 	.pMax = 500,
-	.integralMax = 1000
+	.integralMax = 500
 };
 PID pidAngle(&pidInitAngle);
 

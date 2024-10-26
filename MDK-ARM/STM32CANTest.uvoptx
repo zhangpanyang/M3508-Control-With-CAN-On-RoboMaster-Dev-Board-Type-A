@@ -163,7 +163,7 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\\../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c\142</Expression>
+          <Expression>\\STM32CANTest\../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c\142</Expression>
         </Bp>
         <Bp>
           <Number>1</Number>
@@ -211,7 +211,12 @@
         <Ww>
           <count>5</count>
           <WinNumber>1</WinNumber>
-          <ItemText>pidMotor</ItemText>
+          <ItemText>pidSpeed</ItemText>
+        </Ww>
+        <Ww>
+          <count>6</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>pidAngle</ItemText>
         </Ww>
       </WatchWindow1>
       <Tracepoint>
