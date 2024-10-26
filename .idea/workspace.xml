@@ -23,8 +23,16 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08b7ba20-d45a-45a4-911c-53180874ea0a" name="更改" comment="完成双环控制（角度）">
+    <list default="true" id="08b7ba20-d45a-45a4-911c-53180874ea0a" name="更改" comment="改了参数">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/M3508_Motor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/M3508_Motor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest.uvguix.Sunny" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest.uvguix.Sunny" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.axf" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.axf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.build_log.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.build_log.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.hex" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.hex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest_STM32CANTest.dep" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/STM32CANTest_STM32CANTest.dep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/m3508_motor.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/STM32CANTest/m3508_motor.o" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +147,7 @@
       <workItem from="1729429293811" duration="2632000" />
       <workItem from="1729439059111" duration="9000" />
       <workItem from="1729922080167" duration="9061000" />
-      <workItem from="1729933413316" duration="1805000" />
+      <workItem from="1729933413316" duration="3431000" />
     </task>
     <task id="LOCAL-00001" summary="Premiere">
       <option name="closed" value="true" />
@@ -317,7 +325,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729934909778</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="改了参数">
+      <option name="closed" value="true" />
+      <created>1729935255745</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1729935255745</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,7 +378,8 @@
     <MESSAGE value="设置双环" />
     <MESSAGE value="Fix bug of delta_angle" />
     <MESSAGE value="完成双环控制（角度）" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成双环控制（角度）" />
+    <MESSAGE value="改了参数" />
+    <option name="LAST_COMMIT_MESSAGE" value="改了参数" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
