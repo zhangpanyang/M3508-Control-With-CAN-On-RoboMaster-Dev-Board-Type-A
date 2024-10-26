@@ -57,16 +57,18 @@ void M3508_Motor::canRxMsgCallback_v2(uint8_t rx_data[8]) {
 	handle();
 }
 
-PIDController pidController = {
+PIDInitializer pidInitMotor{
 	.Kp = 0.0025,
 	.Ki = 0,
 	.Kd = 0,
-	.outputMax = 0.05,
 	.pMax = 0.05,
-	.iMax = 0
+	.iMax = 0.05,
+	.outputMax = 0.05
 };
+PID pidMotor(&pidInitMotor);
+
 void M3508_Motor::handle()
 {
-	control_current_ = PID_Compute(&pidController, target_output_speed_, output_speed_, 0.001);
+	control_current_ = pidMotor.compute(target_output_speed_, output_speed_, 0.001);
 	SetMotorCurrent(control_current_);
 }

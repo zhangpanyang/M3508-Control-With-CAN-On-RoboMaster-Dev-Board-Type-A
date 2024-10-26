@@ -14,7 +14,19 @@ NUM=MAX;\
 }\
 }
 
-typedef struct {
+typedef struct
+{
+	float Kp;  // 比例增益
+	float Ki;  // 积分增益
+	float Kd;  // 微分增益
+	float outputMax;
+	float pMax;
+	float iMax;
+} PIDInitializer;
+
+class PID
+{
+public:
 	float Kp;  // 比例增益
 	float Ki;  // 积分增益
 	float Kd;  // 微分增益
@@ -23,9 +35,11 @@ typedef struct {
 	float iMax;
 	float prevError;  // 前一次误差
 	float integral;   // 积分项累积
-} PIDController;
 
-void PID_Init(PIDController *pid, float Kp, float Ki, float Kd);
-float PID_Compute(PIDController *pid, float setpoint, float actualValue, float deltaTime);
+	explicit PID(PIDInitializer* initializer);
+	float compute(float controlValue, float actualValue, float deltaTime);
+
+private:
+};
 
 #endif //PID_H
