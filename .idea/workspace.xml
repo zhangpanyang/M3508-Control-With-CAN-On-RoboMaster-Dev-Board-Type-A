@@ -23,13 +23,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08b7ba20-d45a-45a4-911c-53180874ea0a" name="更改" comment="用target_output_speed_控制">
+    <list default="true" id="08b7ba20-d45a-45a4-911c-53180874ea0a" name="更改" comment="手写pid">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/M3508_Motor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/M3508_Motor.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/pid.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/pid.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/pid.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/pid.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/STM32CANTest.elf.dir/Core/Src/pid.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/STM32CANTest.elf.dir/Core/Src/pid.cpp.obj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +132,7 @@
       <workItem from="1728973459989" duration="5000" />
       <workItem from="1729429293811" duration="2632000" />
       <workItem from="1729439059111" duration="9000" />
-      <workItem from="1729922080167" duration="1703000" />
+      <workItem from="1729922080167" duration="2167000" />
     </task>
     <task id="LOCAL-00001" summary="Premiere">
       <option name="closed" value="true" />
@@ -247,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728962803688</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="手写pid">
+      <option name="closed" value="true" />
+      <created>1729923813476</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1729923813476</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,7 +291,8 @@
     <MESSAGE value="修正PID" />
     <MESSAGE value="用cubeMonitor监控" />
     <MESSAGE value="用target_output_speed_控制" />
-    <option name="LAST_COMMIT_MESSAGE" value="用target_output_speed_控制" />
+    <MESSAGE value="手写pid" />
+    <option name="LAST_COMMIT_MESSAGE" value="手写pid" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

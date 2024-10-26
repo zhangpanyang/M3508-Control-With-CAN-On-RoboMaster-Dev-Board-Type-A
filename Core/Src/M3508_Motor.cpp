@@ -62,7 +62,7 @@ PIDInitializer pidInitMotor{
 	.Ki = 0,
 	.Kd = 0,
 	.pMax = 0.05,
-	.iMax = 0.05,
+	.integralMax = 1000,
 	.outputMax = 0.05
 };
 PID pidMotor(&pidInitMotor);

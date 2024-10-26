@@ -21,7 +21,7 @@ typedef struct
 	float Kd;  // 微分增益
 	float outputMax;
 	float pMax;
-	float iMax;
+	float integralMax;
 } PIDInitializer;
 
 class PID
@@ -32,7 +32,7 @@ public:
 	float Kd;  // 微分增益
 	float outputMax;
 	float pMax;
-	float iMax;
+	float integralMax;
 	float prevError;  // 前一次误差
 	float integral;   // 积分项累积
 

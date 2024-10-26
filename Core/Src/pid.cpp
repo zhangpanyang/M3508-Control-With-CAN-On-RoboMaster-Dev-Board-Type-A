@@ -11,7 +11,7 @@ PID::PID(PIDInitializer* initializer)
 	Kd = initializer->Kd;
 	outputMax = initializer->outputMax;
 	pMax = initializer->pMax;
-	iMax = initializer->iMax;
+	integralMax = initializer->integralMax;
 	prevError = 0;
 	integral = 0;
 }
@@ -20,13 +20,14 @@ float PID::compute(float controlValue, float actualValue, float deltaTime)
 {
 	float error = controlValue - actualValue;
 	integral += error;
+	INRANGE(integral, -integralMax, integralMax);
+
 	float compP = Kp * error;
 	float compI = Ki * integral;
 	float compD = Kd * (error - prevError) / deltaTime;
-	INRANGE(compP, 0 ,pMax);
-	INRANGE(compI, 0, iMax);
+	INRANGE(compP, -pMax ,pMax);
 	float output = compP + compI + compD;
-	INRANGE(output, 0, outputMax);
+	INRANGE(output, -outputMax, outputMax);
 
 	prevError = error;
 	return output;
