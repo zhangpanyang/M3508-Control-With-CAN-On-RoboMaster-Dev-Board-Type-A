@@ -1,6 +1,5 @@
-stm32cantest/m3508_motor.o: ..\Core\Src\M3508_Motor.cpp \
-  ..\Core\Inc\M3508_Motor.h ..\Core\Inc\main.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h \
+stm32cantest/filter.o: ..\Core\Src\filter.cpp ..\Core\Inc\filter.h \
+  ..\Core\Inc\main.h ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h \
   ..\Core\Inc\stm32f4xx_hal_conf.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h \
@@ -33,7 +32,6 @@ stm32cantest/m3508_motor.o: ..\Core\Src\M3508_Motor.cpp \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h \
-  ..\Core\Inc\can_task.h ..\Core\Inc\can.h ..\Core\Inc\filter.h \
   C:\MyProgramFiles\Engineering\Embedded\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\queue \
   C:\MyProgramFiles\Engineering\Embedded\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\make_heap.h \
   C:\MyProgramFiles\Engineering\Embedded\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__algorithm\comp.h \
@@ -606,5 +604,4 @@ stm32cantest/m3508_motor.o: ..\Core\Src\M3508_Motor.cpp \
   C:\MyProgramFiles\Engineering\Embedded\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\not_fn.h \
   C:\MyProgramFiles\Engineering\Embedded\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\pointer_to_binary_function.h \
   C:\MyProgramFiles\Engineering\Embedded\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\pointer_to_unary_function.h \
-  C:\MyProgramFiles\Engineering\Embedded\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\unary_negate.h \
-  ..\Core\Inc\pid.h
+  C:\MyProgramFiles\Engineering\Embedded\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__functional\unary_negate.h

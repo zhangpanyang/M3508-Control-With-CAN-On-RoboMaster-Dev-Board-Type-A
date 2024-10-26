@@ -9,6 +9,7 @@
 "stm32cantest\startup.o"
 "stm32cantest\m3508_motor.o"
 "stm32cantest\pid.o"
+"stm32cantest\filter.o"
 "stm32cantest\stm32f4xx_hal_can.o"
 "stm32cantest\stm32f4xx_hal_rcc.o"
 "stm32cantest\stm32f4xx_hal_rcc_ex.o"

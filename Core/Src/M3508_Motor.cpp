@@ -5,6 +5,7 @@
 #include "M3508_Motor.h"
 
 #include "can_task.h"
+#include "filter.h"
 #include "pid.h"
 
 M3508_Motor::M3508_Motor(){
@@ -81,9 +82,12 @@ PIDInitializer pidInitAngle{
 };
 PID pidAngle(&pidInitAngle);
 
+FilterMovingAverage filterSpeed(50);
+
 void M3508_Motor::handle()
 {
+	filterSpeed.push(output_speed_);
 	target_output_speed_ = pidAngle.compute(target_output_angle_, angle_, 0.001);
-	control_current_ = pidSpeed.compute(target_output_speed_, output_speed_, 0.001);
+	control_current_ = pidSpeed.compute(target_output_speed_, filterSpeed.getResult(), 0.001);
 	SetMotorCurrent(control_current_);
 }
